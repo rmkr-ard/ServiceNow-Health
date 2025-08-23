@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_1806928_health_0/manage_dependent_details/getDepedentInfo/{user}</default_operation_uri>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>getDepedentInfo</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var param = request.pathParams;
+	var user = param.user;
+	var output = {};
+	var message = "";
+	var allDependentsInfo = [];
+
+	if(user){
+
+		var grUser = new GlideRecord("sys_user");
+		grUser.addEncodedQuery("user_name=" + user);
+		grUser.setLimit(1);
+		grUser.query();
+		if(grUser.next()){
+			var userID = grUser.getValue("sys_id");
+		}
+		if(userID){
+			var grDependent = new GlideRecord("x_1806928_health_0_dependents_info");
+			grDependent.addEncodedQuery("primary_insured=" + userID);
+			grDependent.query();
+			var count = grDependent.getRowCount();
+			while(grDependent.next()){
+				var name = grDependent.getValue("name");
+				var relationship = grDependent.getDisplayValue("relationship");
+				var age = grDependent.getDisplayValue("age");
+				var obj = {
+					"name" : name,
+					"relationship" : relationship,
+					"age" : age
+				};
+				allDependentsInfo.push(obj);
+			}
+		}
+		else{
+			gs.info("111RC user doesn't exist in ServiceNow");
+			message = "user doesn't exist in serviceNow";
+		}
+		
+	}
+	else {
+		gs.info("111RC user is empty");
+		message = "user is empty";
+	}
+	output.message = message;
+	output.allDependentsInfo = allDependentsInfo;
+
+	if(!message){
+		response.setBody(output);
+		response.setStatus(200);
+	}
+	else
+		response.setBody(output);
+		response.setStatus(401);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1806928_health_0/v1/manage_dependent_details/getDepedentInfo/{user}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/getDepedentInfo/{user}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-23 10:57:25</sys_created_on>
+        <sys_id>aecc6759c3ab6610adce341d05013188</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>getDepedentInfo</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_update_name>sys_ws_operation_aecc6759c3ab6610adce341d05013188</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-23 12:23:32</sys_updated_on>
+        <web_service_definition display_value="Manage Dependent Details">01aca359c3ab6610adce341d05013164</web_service_definition>
+        <web_service_version display_value="v1">56a00825c32f6610adce341d050131ac</web_service_version>
+    </sys_ws_operation>
+</record_update>

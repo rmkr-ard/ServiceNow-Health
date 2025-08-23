@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_1806928_health_0.Git_Hub</id>
+        <is_internal>false</is_internal>
+        <multiple_connections>false</multiple_connections>
+        <name>Git Hub</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-23 09:32:25</sys_created_on>
+        <sys_id>3269935dc32b6610adce341d05013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1806928_health_0.Git_Hub</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_update_name>sys_alias_3269935dc32b6610adce341d05013142</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-23 09:32:25</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Insurance">c967fed9c3676610adce341d05013189</application>
+        <file_path/>
+        <instance_id>b941694ddb62fd5839639027c59619d5</instance_id>
+        <instance_name>dev211564</instance_name>
+        <name>sys_alias_3269935dc32b6610adce341d05013142</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>x_1806928_health_0.Git_Hub</id><is_internal>false</is_internal><multiple_connections>false</multiple_connections><name>Git Hub</name><parent/><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-23 09:32:25</sys_created_on><sys_id>3269935dc32b6610adce341d05013142</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1806928_health_0.Git_Hub</sys_name><sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package><sys_policy/><sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope><sys_update_name>sys_alias_3269935dc32b6610adce341d05013142</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-23 09:32:25</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>-1423649171</payload_hash>
+        <record_name>x_1806928_health_0.Git_Hub</record_name>
+        <reverted_from/>
+        <source>43e7fe1dc3676610adce341d050131bd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-23 09:32:25</sys_created_on>
+        <sys_id>8889935dc32b6610adce341d05013167</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198d645a7570000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-23 09:32:25</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>0089935d412b66107dbaac9a1cc02667</update_guid>
+        <update_guid_history>0089935d412b66107dbaac9a1cc02667:-1423649171</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-23 10:46:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>43294a92796e4e88989e940f135d5410</sys_id>
+        <sys_metadata>3269935dc32b6610adce341d05013142</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1806928_health_0.Git_Hub</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_scope_delete display_value="">21327e76191245c0a92de2b4c4c6a400</sys_scope_delete>
+        <sys_update_name>sys_alias_3269935dc32b6610adce341d05013142</sys_update_name>
+        <sys_update_version display_value="sys_alias_3269935dc32b6610adce341d05013142">8889935dc32b6610adce341d05013167</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-23 10:46:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
