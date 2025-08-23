@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="92d7db99c32b6610adce341d05013142" extends="task" label="Dependents Info" max_length="40" name="x_1806928_health_0_dependents_info" type="collection">
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element choice="3" display="true" label="Relationship" max_length="40" name="relationship" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Spouse" sequence="0" value="spouse"/>
+                <element inactive_on_update="false" label="Daughter" sequence="1" value="daughter"/>
+                <element inactive_on_update="false" label="Son" sequence="2" value="son"/>
+                <element inactive_on_update="false" label="Mother" sequence="3" value="mother"/>
+                <element inactive_on_update="false" label="Father" sequence="4" value="father"/>
+            </choice>
+        </element>
+        <element label="Age" max_length="40" name="age" type="integer"/>
+    </element>
+</database>
