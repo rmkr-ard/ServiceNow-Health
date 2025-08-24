@@ -9,30 +9,58 @@
         <name>addDependents</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
-    var empty = "Cannot insert empty values!";
-	var userEmpty = "Primary insured cannot be empty";
+    var empty = "Cannot add empty values!";
+	var limit = "Cannot add more than 5 dependents";
 	var data = request.body.data;
-	var primaryInsured = data.name;
+	var depedentDetails = data.dependentDetails;
 	var output = {};
+	var resultsForDepedents = [];
+	var successCount = 0;
+	var failureCount = 0;
+	var status = "";
 
-	if(data){
+	if(depedentDetails.length == 0){
 		gs.info(empty);
-		output.message = empty;
+		output.validationMessage = empty;
 	}
-	else {
+	else if(depedentDetails.length <= 5){
 
 		var depUtil = new x_1806928_health_0.DependentUtil();
-		var user = depUtil.returnSysID(primaryInsured);
 
-		if(user){
-			var grDependent = new GlideRecord("x_1806928_health_0_dependents_info");
-			grDependent.initialize();
+		for (var i=0; i< depedentDetails.length; i++){
+			var addInfo = depUtil.addDependentInfo(depedentDetails[i]);
+			var num = i + 1;
+			resultsForDepedents.push("Result for depedent " + depedentDetails[i].name + ": " + addInfo.message);
+			if(addInfo.status == "SUCCESS"){
+				successCount = successCount + 1;
+			}
+			else{
+				failureCount = failureCount + 1;
+			}
+			}
+		output.depedentAdditionMessage = resultsForDepedents;
+		if(successCount > 0 && failureCount == 0){
+			status = "SUCCESSFUL";
 		}
-		else{
-			gs.info(userEmpty);
-			output.message = userEmpty;
+		else if (successCount > 0 && failureCount > 0){
+			status = "PARTIAL SUCCESS";
+		}
+		else {
+			status = "FAILURE";
+		}
+		
 		}
 
+	else {
+		output.validationMessage = limit;
+	}
+
+	response.setBody(output);
+	if(status == "FAILURE"){
+		response.setStatus(400);
+	}
+	else {
+		response.setStatus(200);
 	}
 
 })(request, response);]]></operation_script>
@@ -49,14 +77,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-23 12:27:46</sys_created_on>
         <sys_id>ec714865c32f6610adce341d050131b6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>addDependents</sys_name>
         <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
         <sys_policy/>
         <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
         <sys_update_name>sys_ws_operation_ec714865c32f6610adce341d050131b6</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-23 13:52:19</sys_updated_on>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-24 10:21:36</sys_updated_on>
         <web_service_definition display_value="Manage Dependent Details">01aca359c3ab6610adce341d05013164</web_service_definition>
         <web_service_version display_value="v1">56a00825c32f6610adce341d050131ac</web_service_version>
     </sys_ws_operation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Manage Dependent Info [ Default GET ]</qualified_name>
+        <rest_endpoint>https://dev211564.service-now.com/api/x_1806928_health_0/v1/manage_dependent_details</rest_endpoint>
+        <rest_message display_value="Manage Dependent Info">dfff4d31c3ab2210adce341d05013155</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-24 12:49:34</sys_created_on>
+        <sys_id>e5309171c3ab2210adce341d05013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_update_name>sys_rest_message_fn_e5309171c3ab2210adce341d05013128</sys_update_name>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-24 12:49:34</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Insurance">c967fed9c3676610adce341d05013189</application>
+        <file_path/>
+        <instance_id>b941694ddb62fd5839639027c59619d5</instance_id>
+        <instance_name>dev211564</instance_name>
+        <name>sys_rest_message_fn_e5309171c3ab2210adce341d05013128</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Manage Dependent Info [ Default GET ]</qualified_name><rest_endpoint>https://dev211564.service-now.com/api/x_1806928_health_0/v1/manage_dependent_details</rest_endpoint><rest_message display_value="Manage Dependent Info">dfff4d31c3ab2210adce341d05013155</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>cramkumar</sys_created_by><sys_created_on>2025-08-24 12:49:34</sys_created_on><sys_id>e5309171c3ab2210adce341d05013128</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package><sys_policy/><sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope><sys_update_name>sys_rest_message_fn_e5309171c3ab2210adce341d05013128</sys_update_name><sys_updated_by>cramkumar</sys_updated_by><sys_updated_on>2025-08-24 12:49:34</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>809787946</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>d8ee0cf5c3272210adce341d0501317c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-24 12:49:34</sys_created_on>
+        <sys_id>69309171c3ab2210adce341d0501312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198dc2081e60000001</sys_recorded_at>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-24 12:49:34</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>ed30917136ab2210be3d352f9aa8bc2a</update_guid>
+        <update_guid_history>ed30917136ab2210be3d352f9aa8bc2a:809787946</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-24 12:50:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>226470b38734468dbf091bba266f3161</sys_id>
+        <sys_metadata>e5309171c3ab2210adce341d05013128</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_scope_delete display_value="">21327e76191245c0a92de2b4c4c6a400</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_e5309171c3ab2210adce341d05013128</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_e5309171c3ab2210adce341d05013128">69309171c3ab2210adce341d0501312b</sys_update_version>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-24 12:50:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

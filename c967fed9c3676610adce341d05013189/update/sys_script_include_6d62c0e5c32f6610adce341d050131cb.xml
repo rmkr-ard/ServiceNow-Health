@@ -14,15 +14,17 @@ DependentUtil.prototype = {
     initialize: function() {
         this.DEPENDTENTS_TABLE = "x_1806928_health_0_dependents_info";
         this.USER_TABLE = "sys_user";
+        this.FAILED = "FAILED";
+        this.SUCCESS = "SUCCESS";
     },
 
-    returnSysID: function(name) {
+    returnSysID: function(queryInput, table) {
 
         var sysID = "";
 
-        if (name) {
-            var grInfo = new GlideRecord(this.USER_TABLE);
-            grInfo.addQuery("user_name", name);
+        if (queryInput && table) {
+            var grInfo = new GlideRecord(table);
+            grInfo.addEncodedQuery(queryInput);
             grInfo.query();
             if (grInfo.next()) {
                 sysID = grInfo.getValue("sys_id");
@@ -30,6 +32,46 @@ DependentUtil.prototype = {
             } else {
                 return sysID;
             }
+        } else {
+            return sysID;
+        }
+    },
+
+    addDependentInfo: function(infoObj) {
+
+        var output = {};
+        output.status = this.FAILED;
+        output.message = "";
+        var name = infoObj.name;
+        var rel = infoObj.relationship;
+        var age = infoObj.age;
+        var user = infoObj.primaryInsured;
+        var userID = this.returnSysID("name=" + user, this.USER_TABLE);
+        var dpQuery = "name=" + name + "^relationship=" + rel + "^age=" + age + "^primary_insured=" + userID;
+        var dependentCheck = this.returnSysID(dpQuery, this.DEPENDTENTS_TABLE);
+
+        if (!dependentCheck) {
+            var addDependentInfo = new GlideRecord(this.DEPENDTENTS_TABLE);
+            addDependentInfo.initialize();
+            addDependentInfo.name = name;
+            addDependentInfo.relationship = rel;
+            addDependentInfo.age = age;
+            addDependentInfo.primary_insured = user;
+            var check = addDependentInfo.insert();
+            if (check) {
+                output.status = this.SUCCESS;
+                output.message = "Dependent info inserted successfully";
+            } else {
+                output.status = this.FAILED;
+                output.message = "Dependent info insert failed";
+            }
+
+            return output;
+
+        } else {
+            output.status = this.FAILED;
+            output.message = "Duplicate Depedent info cannot be inserted";
+            return output;
         }
     },
 
@@ -39,13 +81,13 @@ DependentUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-23 13:40:25</sys_created_on>
         <sys_id>6d62c0e5c32f6610adce341d050131cb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>DependentUtil</sys_name>
         <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
         <sys_update_name>sys_script_include_6d62c0e5c32f6610adce341d050131cb</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-23 13:45:38</sys_updated_on>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-24 10:18:16</sys_updated_on>
     </sys_script_include>
 </record_update>

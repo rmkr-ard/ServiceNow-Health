@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <access_method>btree</access_method>
+        <col_name_string>age,name,primary_insured,relationship</col_name_string>
+        <index_col_name>c8881fd9c32b6610adce341d05013140,0488dbd9c32b6610adce341d050131e9,2a2c6719c3ab6610adce341d0501319f,44881fd9c32b6610adce341d05013127</index_col_name>
+        <logical_table_name>x_1806928_health_0_dependents_info</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-08-24 08:05:21</sys_created_on>
+        <sys_id>462f4439c3272210adce341d05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1806928_health_0_dependents_info</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_update_name>sys_index_x_1806928_health_0_dependents_info_age_name_primary_insured_relationship</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-24 08:05:21</sys_updated_on>
+        <table display_value="Dependents Info" name="x_1806928_health_0_dependents_info">92d7db99c32b6610adce341d05013142</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>
