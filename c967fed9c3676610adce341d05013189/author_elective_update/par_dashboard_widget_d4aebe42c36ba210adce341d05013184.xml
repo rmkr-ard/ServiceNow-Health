@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">dcaebe42c36ba210adce341d0501316d</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"scoreSize":"md","headingPosition":"top","sparklineStyle":"area","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":true,"enableRealTimeUpdate":true,"showZero":true,"colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Dependents Info","sourceType":"table","tableOrViewName":"x_1806928_health_0_dependents_info","filterQuery":"active=true^priority=1","id":"tablex_1806928_health_0_dependents_info1756135827907","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Critical Tasks","showBorder":true,"bareBorder":false,"showDataPassthrough":false,"dataPassthrough":null,"metrics":[{"dataSource":"tablex_1806928_health_0_dependents_info1756135827907","id":"tablex_1806928_health_0_dependents_info17561358279071756135827912","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableDrilldown":true,"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","dateFormat":"default","hideMatrixAggregate":false,"newReporting":false,"filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props>
+        <h>9</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-25 15:30:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d4aebe42c36ba210adce341d05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_update_name>par_dashboard_widget_d4aebe42c36ba210adce341d05013184</sys_update_name>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-25 15:30:28</sys_updated_on>
+        <visualization/>
+        <w>16</w>
+        <widget_props/>
+        <x>32</x>
+        <y>3</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Health Insurance">c967fed9c3676610adce341d05013189</application>
+        <file_path/>
+        <instance_id>b941694ddb62fd5839639027c59619d5</instance_id>
+        <instance_name>dev211564</instance_name>
+        <name>par_dashboard_widget_d4aebe42c36ba210adce341d05013184</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">dcaebe42c36ba210adce341d0501316d</canvas><component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component><component_props>{"scoreSize":"md","headingPosition":"top","sparklineStyle":"area","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":true,"enableRealTimeUpdate":true,"showZero":true,"colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Dependents Info","sourceType":"table","tableOrViewName":"x_1806928_health_0_dependents_info","filterQuery":"active=true^priority=1","id":"tablex_1806928_health_0_dependents_info1756135827907","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Critical Tasks","showBorder":true,"bareBorder":false,"showDataPassthrough":false,"dataPassthrough":null,"metrics":[{"dataSource":"tablex_1806928_health_0_dependents_info1756135827907","id":"tablex_1806928_health_0_dependents_info17561358279071756135827912","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableDrilldown":true,"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","dateFormat":"default","hideMatrixAggregate":false,"newReporting":false,"filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props><h>9</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>cramkumar</sys_created_by><sys_created_on>2025-08-25 15:30:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d4aebe42c36ba210adce341d05013184</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package><sys_policy/><sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope><sys_update_name>par_dashboard_widget_d4aebe42c36ba210adce341d05013184</sys_update_name><sys_updated_by>cramkumar</sys_updated_by><sys_updated_on>2025-08-25 15:30:28</sys_updated_on><visualization/><w>16</w><widget_props/><x>32</x><y>3</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1887093564</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d8ee0cf5c3272210adce341d0501317c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-25 15:30:28</sys_created_on>
+        <sys_id>14aebe42c36ba210adce341d05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198e1da2c810000001</sys_recorded_at>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-25 15:30:28</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>98aebe42016ba2105a194c3a4349b585</update_guid>
+        <update_guid_history>98aebe42016ba2105a194c3a4349b585:1887093564</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">28aefe42c36ba210adce341d0501311d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-25 15:30:30</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>183684481365430383f90f5f7a915d11</sys_id>
+        <sys_metadata>d4aebe42c36ba210adce341d05013184</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_scope_delete display_value="">21327e76191245c0a92de2b4c4c6a400</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_d4aebe42c36ba210adce341d05013184</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_d4aebe42c36ba210adce341d05013184">14aebe42c36ba210adce341d05013186</sys_update_version>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-25 15:30:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

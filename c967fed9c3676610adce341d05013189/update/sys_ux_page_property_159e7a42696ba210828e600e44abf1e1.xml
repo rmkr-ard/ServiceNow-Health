@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>sys_ux_applicability sys_id for Workspace audience</description>
+        <name>wbApplicabilityConfigId</name>
+        <page display_value="Health Insurance Workspace">d19e7a42bf6ba210c369b4dc7ea1a1ef</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-25 15:30:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>159e7a42696ba210828e600e44abf1e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>wbApplicabilityConfigId</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_update_name>sys_ux_page_property_159e7a42696ba210828e600e44abf1e1</sys_update_name>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-25 15:30:20</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_1806928_health_0.d19e7a42bf6ba210c369b4dc7ea1a1ef.root.global.wbApplicabilityConfigId</unique_name>
+        <value>969efa42c36ba210adce341d05013117</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=159e7a42696ba210828e600e44abf1e1"/>
+</record_update>

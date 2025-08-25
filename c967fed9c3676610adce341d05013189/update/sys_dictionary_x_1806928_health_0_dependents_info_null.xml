@@ -52,10 +52,10 @@
         <sys_policy/>
         <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
         <sys_update_name>sys_dictionary_x_1806928_health_0_dependents_info_null</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-23 09:25:12</sys_updated_on>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-25 15:30:22</sys_updated_on>
         <table_reference>false</table_reference>
-        <text_index>false</text_index>
+        <text_index>true</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>

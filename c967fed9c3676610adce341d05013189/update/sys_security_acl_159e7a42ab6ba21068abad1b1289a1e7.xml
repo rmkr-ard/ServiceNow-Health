@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type/>
+        <description/>
+        <local_or_existing/>
+        <name>x.1806928.health-insurance-workspace.*</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[answer = gs.getSession().isLoggedIn();
+if (!answer) {
+    answer = gs.getProperty('glide.security.allow_unauth_roleless_acl', false);
+}]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>cramkumar</sys_created_by>
+        <sys_created_on>2025-08-25 15:30:17</sys_created_on>
+        <sys_id>159e7a42ab6ba21068abad1b1289a1e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.1806928.health-insurance-workspace.*</sys_name>
+        <sys_package display_value="Health Insurance" source="x_1806928_health_0">c967fed9c3676610adce341d05013189</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Health Insurance">c967fed9c3676610adce341d05013189</sys_scope>
+        <sys_update_name>sys_security_acl_159e7a42ab6ba21068abad1b1289a1e7</sys_update_name>
+        <sys_updated_by>cramkumar</sys_updated_by>
+        <sys_updated_on>2025-08-25 15:30:17</sys_updated_on>
+        <type display_value="ux_route">b9eb8a1b873303002941b53046cb1234</type>
+    </sys_security_acl>
+</record_update>
